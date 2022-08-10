@@ -3,7 +3,7 @@ import seaborn as sns
 
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-
+#Due to my own machine issue, I can only use my local path in order to read the file
 dataset = pd.read_csv("D:\\2022-Phase-2-main\\2022-Phase-2-main\\3. Data Science\\2. Data Processing\\example.csv")
 dataset.drop(columns=["s_pos", "c_pos", "x"], inplace=True) #Drop useless values
 dataset["tan_x"] = dataset.apply(lambda x: x["sin_x"] / x["cos_x"] if x["cos_x"] != 0 else "undefined", axis=1) #Use the current dataset to genereate value

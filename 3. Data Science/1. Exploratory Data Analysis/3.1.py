@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
-
+#Due to my own machine issue, I can only use my local path in order to read the file
 dataset = pd.read_csv("D:\\2022-Phase-2-main\\2022-Phase-2-main\\3. Data Science\\1. Exploratory Data Analysis\\example.csv")
 #Get the numerical data
 print(dataset.describe())
